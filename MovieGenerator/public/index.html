@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .refresh-button{
+            display: none;
+        }
+        .dialect-button{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="response"></div>
+
+    <form class="chatgpt-form">
+        <input type="text" class="chatgpt-input" />
+        <button class="elaborate-button">elaborate</button>
+        <button class="refresh-button">refresh story</button>
+        <button class="dialect-button">get dialect</button>
+    </form>
+    
+    <div class="dialectDiv"></div>
+
+    <div class="processDiv">
+        <h1 class="processing">process movie</h1>
+        <button class="process-movies-button">process movie</button>
+    </div>
+    
+
+    <form class="get-movies" >
+        <video id="video-container" width="650" controls autoplay>
+
+        </video>
+        <button class="get-movies-button">get movie</button>
+    </form>
+    <script src="./interactions.js"></script>
+</body>
+</html>
